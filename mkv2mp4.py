@@ -105,7 +105,7 @@ for info in infos.values():
 
     if info.srt_file is not None:
         subtitle_file = '-i "{}"'.format(info.srt_file)
-        subtitle_options = '-c:s mov_text -metadata:s:2 language=eng'
+        subtitle_options = '-c:s mov_text -metadata:s:s:0 language=eng'
 
     output_file = info.mkv_file.replace('mkv', 'mp4')
 
